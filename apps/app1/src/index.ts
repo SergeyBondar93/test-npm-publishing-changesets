@@ -4,4 +4,4 @@ import { B } from '../../../shared/b';
 console.log('App1 started');
 console.log('A:', A);
 console.log('B:', B);
-console.log('App1 completed. update in app 1');
+console.log('App1 completed. update in app 1. update app 1');
