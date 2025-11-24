@@ -1,0 +1,11 @@
+{
+  "push": {
+    "ref": "refs/heads/main",
+    "repository": {
+      "name": "test-npm-publishing-changesets",
+      "owner": {
+        "name": "SergeyBondar93"
+      }
+    }
+  }
+}

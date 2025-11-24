@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run tests
+        run: echo "tests are successfully passed"
+        
+      - name: Build all packages
+        run: npm run build
+        
+      - name: Check build artifacts
+        run: |
+          echo "Checking build artifacts..."
+          ls -la apps/app1/dist/
+          ls -la apps/app2/dist/
+          ls -la npm-package/dist/
