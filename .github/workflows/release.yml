@@ -1,13 +1,7 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'shared/**'
-      - 'npm-package/**'
-      - '.github/workflows/release.yml'
+  workflow_dispatch:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
