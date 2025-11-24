@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.2.0...1.3.0) (2025-11-24)
+
+
+### Features
+
+* feat lol kek ([e76745f](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/e76745fbdc7b5a91c84144814fd805b4b4d3ae94))
+
 # [1.2.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.1...1.2.0) (2025-11-24)
 
 
