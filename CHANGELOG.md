@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.0...1.1.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* fixer ([fa67e77](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/fa67e77f99540371cbc1de13c7862c62ccfc8bf6))
+
 # [1.1.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.0.0...1.1.0) (2025-11-24)
 
 
