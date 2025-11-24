@@ -1,3 +1,16 @@
+# [1.4.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.3.0...1.4.0) (2025-11-24)
+
+
+### Bug Fixes
+
+* fix shared 1 ([b67aaca](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/b67aaca5c064d9d869618d1f8461f9741c870516))
+
+
+### Features
+
+* lol ([3fcd7c7](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/3fcd7c78a4947a00aabf71b23c127f452fc17d76))
+* updated shared ([9682fb2](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/9682fb281c29d528d6181e6eb0cabde14a655c5b))
+
 # [1.3.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.2.0...1.3.0) (2025-11-24)
 
 
