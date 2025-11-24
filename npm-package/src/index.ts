@@ -1,7 +1,7 @@
 import { B } from '@repo/shared';
 
 const lol = 'kek'
-const string = 'фффdaвфыfsdfsdвsdaф';
+const string = 'фффdaвфыfsdfsdвsdasdadaф';
 
 console.log('!I am an npm package', lol, string)
 
