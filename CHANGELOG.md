@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.2.0...1.3.0) (2025-11-24)
+
+
+### Bug Fixes
+
+* add a comment with automation ([46e3d42](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/46e3d42155d66f7c7aa9c515b375222b2a3e3356))
+
+
+### Features
+
+* 123 ([da4bb80](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/da4bb806d87258a37d708ef3f5f3ab540afb0aec))
+
 # [1.2.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.4...1.2.0) (2025-11-24)
 
 
