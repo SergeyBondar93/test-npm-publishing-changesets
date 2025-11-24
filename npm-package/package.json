@@ -1,5 +1,5 @@
 {
-  "name": "@test-npm-repo/test-independent-npm-package",
+  "name": "@test-npm-publishing-changesets/test-independent-npm-package",
   "version": "1.0.0",
   "private": false,
   "main": "dist/npm-package-index.js",
