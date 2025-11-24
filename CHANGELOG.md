@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.0.0...1.1.0) (2025-11-24)
+
+
+### Features
+
+* lol ([1e6fdbf](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/1e6fdbfdee485b9310027bf9758aaf3bb8465a63))
+
 # 1.0.0 (2025-11-24)
 
 
