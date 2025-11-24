@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.0.0...1.1.0) (2025-11-24)
+
+
+### Bug Fixes
+
+* fix ([35d92b0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/35d92b0c29bf377a26b58610478b99b842b5b8cc))
+* fix deps ([c983152](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/c98315222c945527c986ea31585c4fc1787ed1f0))
+
+
+### Features
+
+* lol test ([520030f](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/520030f658109e16090528f6cba7f48c9f4ddadd))
+
 # 1.0.0 (2025-11-24)
 
 
