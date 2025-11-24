@@ -1,3 +1,12 @@
+## [1.1.4](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.3...1.1.4) (2025-11-24)
+
+
+### Bug Fixes
+
+* fix a bug 1 ([c604205](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/c6042056457ac23f8fb04eff9820aad99756e70c))
+* fix bug 2 ([7d53952](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/7d53952278963eb68dcc1dd76b1143d95ff7bcef))
+* fix ci cd ([3641d33](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/3641d3324df18ca88aefb484255ec363c24efd7c))
+
 ## [1.1.3](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.2...1.1.3) (2025-11-24)
 
 
