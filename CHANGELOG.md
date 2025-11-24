@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.4.0...1.5.0) (2025-11-24)
+
+
+### Features
+
+* lol test ([8bc01fa](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/8bc01fa2ec35f6602b4fc9596d4e37f3c03c800c))
+* update apps ([0c25986](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/0c259866a14780d0e5fb4e28f25c24b7141d66f4))
+* updated ([c72daec](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/c72daecb7a88fe441a95a8496d6efa2e236d3568))
+
 # [1.4.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.3.0...1.4.0) (2025-11-24)
 
 
