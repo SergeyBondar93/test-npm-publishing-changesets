@@ -1,3 +1,7 @@
+<!-- Changelog cleared: starting fresh -->
+
+<!-- Previous changelog content was archived before destructive operations. -->
+
 # [1.5.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.4.0...1.5.0) (2025-11-24)
 
 
