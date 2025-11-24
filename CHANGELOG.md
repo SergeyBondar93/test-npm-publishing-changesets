@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.1...1.2.0) (2025-11-24)
+
+
+### Features
+
+* i am a new feat ([2ca5cef](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/2ca5cefc493ee01249bda7a3e19c926e170ab765))
+
 ## [1.1.1](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.0...1.1.1) (2025-11-24)
 
 
