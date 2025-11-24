@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.4...1.2.0) (2025-11-24)
+
+
+### Features
+
+* update dep ([4edf370](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/4edf370022a87ef2fa51c1d33ad870e7c84f35c1))
+
 ## [1.1.4](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.3...1.1.4) (2025-11-24)
 
 
