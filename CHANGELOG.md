@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.1.0...1.1.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* w2hkj ([18eccae](https://github.com/SergeyBondar93/test-npm-publishing-changesets/commit/18eccae1dd41730f79e4e01bafcfcf057684cf7c))
+
 # [1.1.0](https://github.com/SergeyBondar93/test-npm-publishing-changesets/compare/1.0.0...1.1.0) (2025-11-24)
 
 
