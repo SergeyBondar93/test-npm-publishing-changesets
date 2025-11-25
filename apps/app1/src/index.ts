@@ -1,7 +1,7 @@
 import { A } from '../../../shared/a';
 import { B } from '../../../shared/b';
 
-console.log('App1 started');
+console.log('App1 started.211');
 console.log('A:', A);
 console.log('B:', B);
 console.log('App1 completed. update in app 1. update app 1 1211. update');
