@@ -17,13 +17,10 @@ module.exports = {
         pkgRoot: './npm-package',
       },
     ],
-    [
-      '@semantic-release/git',
-      {
-        assets: ['npm-package/package.json', 'CHANGELOG.md'],
-        message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
-      },
-    ],
+    // Removed @semantic-release/git to avoid direct pushes to protected branches.
+    // When running in protected branches that require PRs, pushing from CI will fail.
+    // If you still want auto-commits for CHANGELOG/package.json, consider creating
+    // a PR from the prepare step instead of pushing to the protected branch.
     '@semantic-release/github',
   ],
 };
