@@ -6,7 +6,6 @@ on:
     branches:
       - main
     paths:
-      - 'shared/**'
       - 'npm-package/**'
       - '.github/workflows/release.yml'
 
@@ -49,7 +48,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Release with semantic-release
+      - name: Release with semantic-release (package scoped)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -57,7 +56,12 @@ jobs:
           GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
-        run: npx semantic-release
+        # Run semantic-release in the npm-package directory and apply the
+        # monorepo plugin using -e. This ensures the release is scoped to the
+        # package and won't run (or create tags) for repo-root-only changes.
+        run: |
+          cd npm-package
+          npx semantic-release -e semantic-release-monorepo
 
       - name: Send notification on successful release
         if: success()

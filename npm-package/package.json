@@ -19,9 +19,7 @@
   "files": [
     "dist"
   ],
-  "release": {
-    "tagFormat": "${name}@${version}"
-  },
+  
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
