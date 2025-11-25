@@ -1,7 +1,7 @@
 import { B } from '@repo/shared';
 
 const lol = 'kek'
-const string = 'loler updatfsdfsdasdass2121221edasdas 1. fix bug dsadadasdasdаыва11s2dasdas2121211111';
+const string = 'i am a new 1.3 hopefully';
 
 console.log('!I am an npm packacbvbvcge', lol, string)
 
