@@ -1,11 +1,18 @@
 module.exports = {
   branches: ['main'],
-  tagFormat: '${version}',
+  // When running releases inside a monorepo we want tag names to include the
+  // package name so tags are unambiguous (e.g. @scope/pkg@1.2.3). The
+  // semantic-release-monorepo plugin exposes the package name to templates so
+  // we can use ${name}@${version} safely.
+  tagFormat: '${name}@${version}',
   plugins: [
     // Unsquash plugin extracts original PR commits when GitHub squash-merges
     // so semantic-release can analyze conventional-commit messages from those
     // commits instead of only the squash commit message.
     
+    // Ensure monorepo-aware behaviour is applied early so ${name} resolves
+    // to the current package being released.
+    'semantic-release-monorepo',
     'semantic-release-unsquash',
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
