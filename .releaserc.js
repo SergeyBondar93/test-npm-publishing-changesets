@@ -2,6 +2,11 @@ module.exports = {
   branches: ['main'],
   tagFormat: '${version}',
   plugins: [
+    // Unsquash plugin extracts original PR commits when GitHub squash-merges
+    // so semantic-release can analyze conventional-commit messages from those
+    // commits instead of only the squash commit message.
+    
+    'semantic-release-unsquash',
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
     [
