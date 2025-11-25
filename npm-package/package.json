@@ -1,6 +1,6 @@
 {
   "name": "@SergeyBondar93/test-independent-npm-package",
-  "version": "1.3.0",
+  "version": "0.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SergeyBondar93/test-npm-publishing-changesets.git"
@@ -19,6 +19,9 @@
   "files": [
     "dist"
   ],
+  "release": {
+    "tagFormat": "${name}@${version}"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
