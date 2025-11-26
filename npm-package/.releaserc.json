@@ -1,5 +1,12 @@
 {
-  "branches": ["main", "master"],
+  "branches": [
+    "main",
+    "master",
+    {
+      "name": "*/*",
+      "prerelease": "${name.replace(/^.*\\//, '')}"
+    }
+  ],
   "tagFormat": "@SergeyBondar93/test-independent-npm-package@${version}",
   "plugins": [
     "semantic-release-unsquash",
