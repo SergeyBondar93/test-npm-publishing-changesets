@@ -6,8 +6,8 @@
     "url": "git+https://github.com/SergeyBondar93/test-npm-publishing-changesets.git"
   },
   "private": false,
-  "main": "dist/npm-package-index.js",
   "type": "module",
+  "main": "dist/npm-package-index.js",
   "exports": {
     ".": "./dist/npm-package-index.js"
   },
