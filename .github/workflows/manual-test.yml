@@ -1,0 +1,28 @@
+name: Manual Test Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Test message'
+        required: false
+        default: 'Hello from manual workflow!'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Print message
+        run: |
+          echo "Workflow triggered manually"
+          echo "Message: ${{ github.event.inputs.message }}"
+      
+      - name: Show environment
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref }}"
+          echo "Actor: ${{ github.actor }}"
