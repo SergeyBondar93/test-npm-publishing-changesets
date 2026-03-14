@@ -5,6 +5,7 @@ const {
   bumpVersion,
   createAndPushTag,
   publishPackage,
+  createGitHubRelease,
 } = require('./release-utils');
 
 function main() {
@@ -18,6 +19,7 @@ function main() {
   const releaseTag = `${PACKAGE_NAME}@${newVersion}`;
   createAndPushTag(releaseTag, cwd);
   publishPackage(newVersion, 'latest', cwd);
+  createGitHubRelease(releaseTag, newVersion, false);
 }
 
 try {

@@ -7,6 +7,7 @@ const {
   getLatestFeatureTag,
   createAndPushTag,
   publishPackage,
+  createGitHubRelease,
 } = require('./release-utils');
 
 function main() {
@@ -33,6 +34,7 @@ function main() {
   const releaseTag = `${PACKAGE_NAME}@${featureTagVersion}`;
   createAndPushTag(releaseTag, cwd);
   publishPackage(featureTagVersion, distTag, cwd);
+  createGitHubRelease(releaseTag, featureTagVersion, true);
 }
 
 try {
