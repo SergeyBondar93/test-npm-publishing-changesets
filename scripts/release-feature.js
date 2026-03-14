@@ -6,6 +6,7 @@ const {
   sanitizeBranchTag,
   getLatestFeatureTag,
   createAndPushTag,
+  publishPackage,
 } = require('./release-utils');
 
 function main() {
@@ -15,20 +16,23 @@ function main() {
   const distTag = sanitizeBranchTag(branchName);
   const latestFeatureTag = getLatestFeatureTag(distTag, cwd);
 
-  let baseVersion;
+  let featureTagVersion;
   if (latestFeatureTag) {
-    const featureVersion = extractVersionFromTag(latestFeatureTag);
-    baseVersion = featureVersion.replace(`-${distTag}`, '');
+    const version = extractVersionFromTag(latestFeatureTag);
+    const match = version.match(/^(\d+\.\d+\.\d+)-.*\.(\d+)$/);
+    const base = match[1];
+    const prerelease = parseInt(match[2], 10) + 1;
+    featureTagVersion = `${base}-${distTag}.${prerelease}`;
   } else {
     const latestStableTag = getLatestStableTag(cwd);
-    baseVersion = extractVersionFromTag(latestStableTag);
+    const baseVersion = extractVersionFromTag(latestStableTag);
+    const patchVersion = bumpVersion(baseVersion, 'patch');
+    featureTagVersion = `${patchVersion}-${distTag}.0`;
   }
-
-  const patchVersion = bumpVersion(baseVersion, 'patch');
-  const featureTagVersion = `${patchVersion}-${distTag}`;
 
   const releaseTag = `${PACKAGE_NAME}@${featureTagVersion}`;
   createAndPushTag(releaseTag, cwd);
+  publishPackage(featureTagVersion, distTag, cwd);
 }
 
 try {

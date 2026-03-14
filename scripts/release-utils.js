@@ -68,9 +68,9 @@ function sanitizeBranchTag(branchName) {
   return sanitized || 'feature';
 }
 
-function getLatestFeatureTag(pkgName, distTag, cwd) {
-  const pattern = `${pkgName}@*-${distTag}`;
-  const regex = new RegExp(`^${escapeRegex(pkgName)}@(\\d+)\\.(\\d+)\\.(\\d+)-${escapeRegex(distTag)}$`);
+function getLatestFeatureTag(distTag, cwd) {
+  const pattern = `${PACKAGE_NAME}@*-${distTag}.*`;
+  const regex = new RegExp(`^${escapeRegex(PACKAGE_NAME)}@(\\d+)\\.(\\d+)\\.(\\d+)-${escapeRegex(distTag)}\\.(\\d+)$`);
   const tagsRaw = run('git', ['tag', '-l', pattern, '--sort=-v:refname'], { cwd });
   const tags = tagsRaw ? tagsRaw.split('\n').map((v) => v.trim()).filter(Boolean) : [];
   return tags.find((tag) => regex.test(tag)) || null;
@@ -81,6 +81,11 @@ function createAndPushTag(tag, cwd) {
   runStreaming('git', ['push', 'origin', tag], { cwd });
 }
 
+function publishPackage(version, distTag, cwd) {
+  runStreaming('npm', ['version', version, '--no-git-tag-version'], { cwd });
+  runStreaming('npm', ['publish', '--tag', distTag], { cwd });
+}
+
 module.exports = {
   PACKAGE_NAME,
   getLatestStableTag,
@@ -89,5 +94,6 @@ module.exports = {
   sanitizeBranchTag,
   getLatestFeatureTag,
   createAndPushTag,
+  publishPackage,
   runStreaming,
 };

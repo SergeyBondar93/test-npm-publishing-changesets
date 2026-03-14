@@ -4,6 +4,7 @@ const {
   extractVersionFromTag,
   bumpVersion,
   createAndPushTag,
+  publishPackage,
 } = require('./release-utils');
 
 function main() {
@@ -16,6 +17,7 @@ function main() {
 
   const releaseTag = `${PACKAGE_NAME}@${newVersion}`;
   createAndPushTag(releaseTag, cwd);
+  publishPackage(newVersion, 'latest', cwd);
 }
 
 try {
