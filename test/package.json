@@ -10,6 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@SergeyBondar93/test-independent-npm-package": "0.4.1-test-test.1"
+    "@SergeyBondar93/test-independent-npm-package": "0.4.1"
   }
 }
