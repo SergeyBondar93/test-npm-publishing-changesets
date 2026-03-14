@@ -57,10 +57,14 @@ jobs:
       - name: Create stable release tag
         if: github.ref_name == 'main' || github.ref_name == 'develop'
         working-directory: npm-package
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: node ../scripts/release-stable.js "${{ inputs.release_type }}"
 
       # Feature-branch release
       - name: Create feature branch tag
         if: github.ref_name != 'main' && github.ref_name != 'develop'
         working-directory: npm-package
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: node ../scripts/release-feature.js "${{ github.ref_name }}"
